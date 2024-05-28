@@ -13,7 +13,6 @@ Customer customer;
 Order order;
 User user;
 
-
 class SalesManagerSystem {
 private:
 
@@ -59,13 +58,15 @@ public:
                 break;
             case 7:
                 product.fileSave();
+                customer.fileSave();
+                order.fileSave();
                 cout << "Exiting and Saving...\n";
                 break;
             case 8:
                 system("cls");
                 int deleteID;
                 cin >> deleteID;
-                product.deleteProduct(deleteID);
+                cout << product.getNAME(deleteID);
                 break;
             default:
                 cout << "Invalid choice! Please try again.\n";
@@ -79,14 +80,21 @@ SalesManagerSystem sms;
 
 BOOL WINAPI ConsoleHandler(DWORD event){
     product.fileSave();
+    customer.fileSave();
+    order.fileSave();
     cout << "\n\nEMERGENCY SAVING\n\n";
     return true;
 }
 
 int main() {
     SetConsoleCtrlHandler(ConsoleHandler, TRUE); // обробка події на випадок екстренного закриття програм через графічний інтерфейс
+
     product.fileRead();
+    customer.fileRead();
+    order.fileRead();
+    
     user.loggingIn();
+    
     sms.showMenu();
     //cout << "END!";
     return 0;

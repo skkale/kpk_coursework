@@ -21,7 +21,7 @@ public:
     Product();  // конструктор за замовчуванням
     ~Product(); // деструктор за замовчуванням
     
-        // ініціалізація
+        // ініціалізація/оголошення
     void setID(int _id);
     void setNAME(string _name);
     void setPRICE(double _price);

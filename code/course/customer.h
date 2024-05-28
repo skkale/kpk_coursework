@@ -1,6 +1,7 @@
 #ifndef customer_h
 #define customer_h
 #include <vector>
+#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -18,9 +19,21 @@ public:
     
     Customer();
     ~Customer();
+    
+    void setID(int _id);
+    void setNAME(string _name);
+    void setEMAIL(string _email);
+    void fileRead();
+
+    string getNAME(int findID);
+    string getEMAIL(int findID);
+    void getCustomer();
 
     void addCustomer();
+    void deleteCustomer(int deleteID);
 
     void listCustomers();
+    
+    void fileSave();
 };
 #endif // !customer_h

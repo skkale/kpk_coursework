@@ -1,4 +1,14 @@
-﻿  product.cpp
-G:\course_work\code\course\product.cpp(30): warning C4715: Product::getNAME: значение возвращается не при всех путях выполнения
-G:\course_work\code\course\product.cpp(37): warning C4715: Product::getPRICE: значение возвращается не при всех путях выполнения
+﻿  customer.cpp
+G:\course_work\code\course\customer.cpp(20,40): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+G:\course_work\code\course\customer.cpp(21,47): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  order.cpp
+G:\course_work\code\course\order.cpp(20,40): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+G:\course_work\code\course\order.cpp(21,57): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+G:\course_work\code\course\order.cpp(23,47): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Создание кода...
+G:\course_work\code\course\order.cpp(44): warning C4715: Order::getPRODUCTID: значение возвращается не при всех путях выполнения
+G:\course_work\code\course\order.cpp(52): warning C4715: Order::getCUSTOMERID: значение возвращается не при всех путях выполнения
+G:\course_work\code\course\order.cpp(60): warning C4715: Order::getSTATUS: значение возвращается не при всех путях выполнения
+G:\course_work\code\course\customer.cpp(41): warning C4715: Customer::getNAME: значение возвращается не при всех путях выполнения
+G:\course_work\code\course\customer.cpp(49): warning C4715: Customer::getEMAIL: значение возвращается не при всех путях выполнения
   course.vcxproj -> G:\course_work\code\course\x64\Debug\course.exe
