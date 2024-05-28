@@ -1,0 +1,4 @@
+﻿  product.cpp
+G:\course_work\code\course\product.cpp(30): warning C4715: Product::getNAME: значение возвращается не при всех путях выполнения
+G:\course_work\code\course\product.cpp(37): warning C4715: Product::getPRICE: значение возвращается не при всех путях выполнения
+  course.vcxproj -> G:\course_work\code\course\x64\Debug\course.exe
